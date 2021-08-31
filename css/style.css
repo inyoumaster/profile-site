@@ -1,0 +1,373 @@
+body {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, white), color-stop(50%, #badbe8), to(white));
+  background: linear-gradient(to right, white 20%, #badbe8 50%, white);
+}
+
+#wrap {
+  width: 900px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/intro.jpg) no-repeat;
+  background-size: cover;
+  content: "";
+  opacity: 0.4;
+  z-index: -100;
+}
+
+header > .intro {
+  height: 600px;
+}
+
+header > .intro h2 {
+  padding-top: 350px;
+  color: #166439;
+  font-size: 35px;
+  text-align: center;
+}
+
+header > .intro h2 > span {
+  color: #0d3a4b;
+}
+
+header > .intro > p {
+  color: #fff;
+  text-align: center;
+}
+
+header > nav {
+  display: block;
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  width: 320px;
+  height: 220px;
+  margin-left: 450px;
+  background-color: #468346;
+  border-radius: 10px;
+}
+
+header > nav > .frame {
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: 0 auto;
+  background: url(../images/navmark.png) no-repeat;
+  background-size: cover;
+}
+
+header > nav > .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40px;
+}
+
+header > nav > .gnb > li.on > a {
+  color: #ff0;
+}
+
+header > nav > .gnb > li > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+header > nav > .gnb > li > a:hover {
+  color: #ff0;
+}
+
+section {
+  position: relative;
+  height: 3200px;
+  padding-top: 200px;
+  background-color: rgba(204, 204, 204, 0.337);
+}
+
+section::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1400px;
+  background: url(../images/background.jpg) no-repeat;
+  background-size: cover;
+  content: "";
+  opacity: 0.5;
+  z-index: -100;
+}
+
+section > .about {
+  height: 1300px;
+}
+
+section > .about > h2 {
+  margin-bottom: 50px;
+  color: #20a57d;
+  font-size: 40px;
+}
+
+section > .about > .vision > h3 {
+  color: #ff0;
+  text-align: center;
+}
+
+section > .about > .vision > ol {
+  margin-top: 20px;
+}
+
+section > .about > .vision > ol > li {
+  color: #305e68;
+  text-align: center;
+}
+
+section > .about > .skill {
+  padding-top: 200px;
+}
+
+section > .about > .skill > h3 {
+  text-align: center;
+}
+
+section > .about > .skill > h3:nth-of-type(2) {
+  margin-top: 800px;
+}
+
+section > .about > .skill > .icon-box {
+  position: relative;
+}
+
+section > .about > .skill > .icon-box > li {
+  position: absolute;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+section > .about > .skill > .icon-box > li:nth-of-type(1) {
+  left: 15px;
+  top: 100px;
+  width: 220px;
+  height: 310px;
+  background-image: url(../images/skill1.png);
+}
+
+section > .about > .skill > .icon-box > li:nth-of-type(2) {
+  top: 100px;
+  left: 340px;
+  width: 220px;
+  height: 310px;
+  background-image: url(../images/skill2.png);
+}
+
+section > .about > .skill > .icon-box > li:nth-of-type(3) {
+  top: 85px;
+  left: 660px;
+  width: 230px;
+  height: 330px;
+  background-image: url(../images/skill3.png);
+}
+
+section > .about > .skill > .icon-box > li:nth-of-type(4) {
+  left: 35px;
+  top: 400px;
+  width: 400px;
+  height: 300px;
+  background-image: url(../images/skill4.png);
+}
+
+section > .about > .skill > .icon-box > li:nth-of-type(5) {
+  top: 400px;
+  left: 500px;
+  width: 350px;
+  height: 350px;
+  background-image: url(../images/skill5.png);
+}
+
+section > .port > h2 {
+  color: #20a57d;
+  font-size: 40px;
+  text-align: center;
+}
+
+section > .port > .visual {
+  overflow: hidden;
+  position: relative;
+  width: 900px;
+  height: 510px;
+  margin-top: 100px;
+}
+
+section > .port > .visual > .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1800px;
+  height: 500px;
+}
+
+section > .port > .visual > .slides > li {
+  width: 900px;
+  height: 500px;
+  text-indent: -9999px;
+  background-size: cover;
+}
+
+section > .port > .visual > .slides > li:nth-of-type(1) {
+  background-image: url(../images/port1.jpg);
+}
+
+section > .port > .visual > .slides > li:nth-of-type(2) {
+  background-image: url(../images/port2.jpg);
+}
+
+section > .port > .visual > .link > ul > li {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 400px;
+  width: 200px;
+  margin-left: -100px;
+}
+
+section > .port > .visual > .link > ul > li:nth-of-type(1) {
+  display: block;
+}
+
+section > .port > .visual > .link > ul > li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #aab03a;
+}
+
+section > .port > .visual > .link > ul > li:hover > a {
+  color: #4ce5e8;
+  background-color: #ff0;
+}
+
+section > .port > .container {
+  position: relative;
+}
+
+section > .port > .container > .pagination > a {
+  display: block;
+  position: absolute;
+  top: 45px;
+  width: 19px;
+  height: 28px;
+  background-image: url(../images/left-right.png);
+  background-repeat: no-repeat;
+  background-position: -26px -7px;
+}
+
+section > .port > .container > .pagination > .prev {
+  left: 280px;
+}
+
+section > .port > .container > .pagination > .prev:hover {
+  background-position: -26px -45px;
+}
+
+section > .port > .container > .pagination > .next {
+  right: 280px;
+  background-position: -54px -7px;
+}
+
+section > .port > .container > .pagination > .next:hover {
+  background-position: -54px -45px;
+}
+
+section > .port > .container > .thumb > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -110px;
+  margin-left: -150px;
+}
+
+section > .port > .container > .thumb > ul > li {
+  width: 150px;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section > .port > .container > .thumb > ul > li.on {
+  border: 1px solid #d0ca25;
+}
+
+section > .port > .container > .thumb > ul > li:nth-of-type(1) {
+  background-image: url(../images/port1.jpg);
+}
+
+section > .port > .container > .thumb > ul > li:nth-of-type(2) {
+  background-image: url(../images/port2.jpg);
+}
+
+section > .port > .container > .thumb > ul > li > a {
+  display: block;
+  height: 100px;
+  text-indent: -9999px;
+}
+
+section > .ux {
+  margin-top: 300px;
+}
+
+section > .ux > h2 {
+  color: #20a57d;
+  margin-bottom: 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+section > .ux > .frame {
+  display: block;
+  height: 400px;
+  background-image: url(../images/ui-ux.jpg);
+  background-size: cover;
+}
+
+section > .ux > .container {
+  margin-top: 100px;
+}
+
+section > .ux > .container > h3 {
+  font-weight: 600;
+  margin-left: 130px;
+  font-size: 25px;
+}
+
+section > .ux > .container > p {
+  color: #361c7e;
+  margin: 30px 130px 0 130px;
+}
+
+footer {
+  margin-top: 10px;
+}
+
+footer > address {
+  padding-left: 120px;
+  background-color: #ccc;
+}
+/*# sourceMappingURL=style.css.map */
